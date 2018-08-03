@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>omer manager </title>
+  <style type="text/css">
+    html,body,ul,li,h3{
+      padding:0px;
+      margin:0px;
+    }
+    ul li{
+      float:left;
+      list-style-type: none;
+      width:200px;
+      border:1px solid black;
+      text-align:center;
+    }
+    div.main{
+      width:450px;
+      margin:auto;
+    }
+  </style>
+</head>
+<body>
+  <div class="main">
+    <div>
+      <ul>
+        <li><strong>Product</strong></li>
+        <li><strong>Item Cost</strong></li>
+      </ul>
+    </div>
+    <div>
+      <h3>Varun Reddy</h3>
+      <ul>
+        <li>Basketball </li>
+        <li class="price">7.99</li>
+      </ul>
+      <ul>
+        <li>Shoes </li>
+        <li class="price">199.99</li>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum"></li>
+      </ul>
+    </div>
+
+    <div>
+      <h3>Venugopal Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price2">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price2">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum2"></li>
+      </ul>
+    </div>
+
+    <div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <h3>Arun joshi </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price3">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price3">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum3"></li>
+      </ul>
+    </div>
+
+    <div>
+            <br>
+      <br>
+      <br>
+      <br>
+      <h3>Puli Tejaswi</h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price4">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price4">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum4"></li>
+      </ul>
+    </div>
+    
+    <div>
+            <br>
+      <br>
+      <br>
+      <br>
+      <h3>Jay Krishna </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price5">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price5">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum5"></li>
+      </ul>
+    </div>
+    
+    <div>
+            <br>
+      <br>
+      <br>
+      <br>
+      <h3>Sai Chaitanya </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price6">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price6">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum6"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Sampath Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price7">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price7">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum7"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Prince Madhu </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price8">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price8">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum8"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3> </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price9">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price9">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum9"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Vinay Varma </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price10">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price10">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum10"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Rohith Singh </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price11">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price11">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum11"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Priyanka Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price12">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price12">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum12"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Pavan Kumar </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price13">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price13">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum13"></li>
+      </ul>
+    </div>
+    
+    <div>
+            <br>
+      <br>
+      <br>
+      <br>
+      <h3>Arun Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price14">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price14">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum14"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Rakesh Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price15">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price15">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum15"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Charan Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price16">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price16">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum16"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Praveen Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price17">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price17">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum17"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Nikhil Swaroop </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price18">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price18">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum18"></li>
+      </ul>
+    </div>
+    
+    <div>
+            <br>
+      <br>
+      <br>
+      <br>
+      <h3>Ram Pothineni </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price19">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price19">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum19"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Tejaswi Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price20">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price20">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum20"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Shireesha Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price21">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price21">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum21"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Srikanth Reddy </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price22">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price22">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum22"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Sruthi Smily </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price23">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price23">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum23"></li>
+      </ul>
+    </div>
+    
+    <div>
+      <h3>Victory Venky </h3>
+      <ul>
+        <li>Frisbee </li>
+        <li class="price24">2.99</li>
+      </ul>
+      <ul>
+        <li>Hat </li>
+        <li class="price24">5.99</li>
+      </ul>
+      </ul>
+      <ul>
+        <li>Total cost</li>
+        <li id="sum24"></li>
+      </ul>
+    </div>
+  </div>
+  <script type="text/javascript">
+    var priceEl = document.getElementsByClassName('price');
+     document.getElementById('sum').innerHTML = parseFloat(priceEl[0].innerHTML)+parseFloat(priceEl[1].innerHTML);
+    // var abc = [];
+    // for (var i =0 ; i < priceEl.length; i++) {
+    //  abc.push(parseFloat(priceEl[i].innerHTML));
+    // }
+    // var total = 0
+    // for (var j =0 ; j <= abc.length; j++) {
+    // total = total + abc[j];
+    // }
+    
+    // document.getElementById('sum').innerHTML = total;
+    // var price1El = document.getElementsByClassName('price1');
+    // document.getElementById('sum1').innerHTML = parseFloat(price1El[0].innerHTML)+parseFloat(price1El[1].innerHTML);
+    var price2El = document.getElementsByClassName('price2');
+    document.getElementById('sum2').innerHTML = parseFloat(price2El[0].innerHTML)+parseFloat(price2El[1].innerHTML);    
+    var price3El = document.getElementsByClassName('price3');
+    document.getElementById('sum3').innerHTML = parseFloat(price3El[0].innerHTML)+parseFloat(price3El[1].innerHTML);
+    var price4El = document.getElementsByClassName('price4');
+    document.getElementById('sum4').innerHTML = parseFloat(price4El[0].innerHTML)+parseFloat(price4El[1].innerHTML);
+    var price5El = document.getElementsByClassName('price5');
+    document.getElementById('sum5').innerHTML = parseFloat(price5El[0].innerHTML)+parseFloat(price5El[1].innerHTML);
+    var price6El = document.getElementsByClassName('price6');
+    document.getElementById('sum6').innerHTML = parseFloat(price6El[0].innerHTML)+parseFloat(price6El[1].innerHTML);
+    var price7El = document.getElementsByClassName('price7');
+    document.getElementById('sum7').innerHTML = parseFloat(price7El[0].innerHTML)+parseFloat(price7El[1].innerHTML);
+    var price8El = document.getElementsByClassName('price8');
+    document.getElementById('sum8').innerHTML = parseFloat(price8El[0].innerHTML)+parseFloat(price8El[1].innerHTML);
+    var price9El = document.getElementsByClassName('price9');
+    document.getElementById('sum9').innerHTML = parseFloat(price9El[0].innerHTML)+parseFloat(price9El[1].innerHTML);
+    var price10El = document.getElementsByClassName('price10');
+    document.getElementById('sum10').innerHTML = parseFloat(price10El[0].innerHTML)+parseFloat(price10El[1].innerHTML);
+    var price11El = document.getElementsByClassName('price11');
+    document.getElementById('sum11').innerHTML = parseFloat(price11El[0].innerHTML)+parseFloat(price11El[1].innerHTML);
+    var price12El = document.getElementsByClassName('price12');
+    document.getElementById('sum12').innerHTML = parseFloat(price12El[0].innerHTML)+parseFloat(price12El[1].innerHTML);
+    var price13El = document.getElementsByClassName('price13');
+    document.getElementById('sum13').innerHTML = parseFloat(price13El[0].innerHTML)+parseFloat(price13El[1].innerHTML);
+    var price14El = document.getElementsByClassName('price14');
+    document.getElementById('sum14').innerHTML = parseFloat(price14El[0].innerHTML)+parseFloat(price14El[1].innerHTML);
+    var price15El = document.getElementsByClassName('price15');
+    document.getElementById('sum15').innerHTML = parseFloat(price15El[0].innerHTML)+parseFloat(price15El[1].innerHTML);
+    var price16El = document.getElementsByClassName('price16');
+    document.getElementById('sum16').innerHTML = parseFloat(price16El[0].innerHTML)+parseFloat(price16El[1].innerHTML);
+    var price17El = document.getElementsByClassName('price17');
+    document.getElementById('sum17').innerHTML = parseFloat(price17El[0].innerHTML)+parseFloat(price17El[1].innerHTML);
+    var price18El = document.getElementsByClassName('price18');
+    document.getElementById('sum18').innerHTML = parseFloat(price18El[0].innerHTML)+parseFloat(price18El[1].innerHTML);
+    var price19El = document.getElementsByClassName('price19');
+    document.getElementById('sum19').innerHTML = parseFloat(price19El[0].innerHTML)+parseFloat(price19El[1].innerHTML);
+    var price20El = document.getElementsByClassName('price20');
+    document.getElementById('sum20').innerHTML = parseFloat(price20El[0].innerHTML)+parseFloat(price20El[1].innerHTML);
+    var price21El = document.getElementsByClassName('price21');
+    document.getElementById('sum21').innerHTML = parseFloat(price21El[0].innerHTML)+parseFloat(price21El[1].innerHTML);
+    var price22El = document.getElementsByClassName('price22');
+    document.getElementById('sum22').innerHTML = parseFloat(price22El[0].innerHTML)+parseFloat(price22El[1].innerHTML);
+    var price23El = document.getElementsByClassName('price23');
+    document.getElementById('sum23').innerHTML = parseFloat(price23El[0].innerHTML)+parseFloat(price23El[1].innerHTML);
+    var price24El = document.getElementsByClassName('price24');
+    document.getElementById('sum24').innerHTML = parseFloat(price24El[0].innerHTML)+parseFloat(price24El[1].innerHTML);
+    
+
+  </script>
+</body>
+</html>
